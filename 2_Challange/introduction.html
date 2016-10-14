@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>flexbox勉強会：応用演習</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!-- mobile -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+
+<!-- stylesheets -->
+<style>
+  body {
+    margin: 30px;
+  }
+  h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid skyblue;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+  }
+</style>
+
+</head>
+<body>
+<h1>flexbox勉強会：応用演習</h1>
+<p>flexboxを活用して、ちょっと面倒臭いレイアウトを実装してみよう</p>
+<p><a href="reference.html" target="_blank" class="btn">flexbox簡易リファレンス</a></p>
+
+<section>
+  <h2>チャレンジ問題１：市松グリッド</h2>
+  <p><a href="wire/wire-1.png" target="_blank"><img src="wire/wire-1.png" alt="" width="200" height="150"></a></p>
+  <dl>
+    <dt>【条件】</dt>
+    <dd>・640px以上の時、写真が左右交互に並ぶ市松状のグリッドレイアウトにしてください。</dd>
+    <dd>・テキストは、背景色のついたテキストブロックエリアの上下左右中央に配置してください。</dd>
+    <dt>【作業ページ】</dt>
+    <dd><a href="Challenge-1/index.html">Challenge-1/index.html</a></dd>
+    <dd><a href="Challenge-1/style.css">Challenge-1/style.css</a></dd>
+    <dt>【ヒント】</dt>
+    <dd><a href="wire/hint-1.png" target="_blank">腕に自信のある人は見ちゃダメ！</a></dd>
+  </dl>
+</section>
+
+<section>
+  <h2>チャレンジ問題２：rowspan風グリッド①</h2>
+  <p><a href="wire/wire-2.png" target="_blank"><img src="wire/wire-2.png" alt="" width="200" height="200"></a></p>
+  <dl>
+    <dt>【条件】</dt>
+    <dd>・640px以上の時、左に写真、右にテキストブロック（縦積み）のレイアウトにしてください</dd>
+    <dd>・写真ブロックの高さとテキストブロックの高さは常に揃えてください</dd>
+    <dd>・2つのテキストブロックは隣の写真ブロックの高さと同じになるようにそれぞれ伸縮する状態としてください</dd>
+    <dd>・テキストは、それぞれのテキストブロックの中で上下左右中央に配置してください</dd>
+    <dt>【作業ページ】</dt>
+    <dd><a href="Challenge-2/index.html">Challenge-2/index.html</a></dd>
+    <dd><a href="Challenge-2/style.css">Challenge-2/style.css</a></dd>
+    <dt>【ヒント】</dt>
+    <dd><a href="wire/hint-2.png" target="_blank">腕に自信のある人は見ちゃダメ！</a></dd>
+  </dl>
+</section>
+
+<section>
+  <h2>チャレンジ問題３：rowspan風グリッド②（時間余った人だけ）</h2>
+  <p><a href="wire/wire-3.png" target="_blank"><img src="wire/wire-3.png" alt="" width="200" height="200"></a></p>
+  <dl>
+    <dt>【条件】</dt>
+    <dd></dd>
+    <dd>・上記rowspan風グリッド①をベースにして、各ブロックのレイアウトを②のように変更してください</dd>
+    <dd>・CSSのみで実装してください。（HTML構造の変更は禁止です）</dd>
+    <dt>【作業ページ】</dt>
+    <dd><a href="Challenge-3/index.html">Challenge-3/index.html</a></dd>
+    <dd>自分で作成したCallenge-2のstyle.cssをコピーして、追記してください</dd>
+  </dl>
+</section>
+
+
+</body>
+</html>

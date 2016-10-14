@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>flex関連プロパティ：簡易リファレンス</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!-- mobile -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+
+<!-- stylesheets -->
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,td {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  thead th{
+    background: #3d9108;
+    color: #fff;
+  }
+  tbody tr:nth-child(even){
+    background: #f2f2f2;
+  }
+  tbody th {
+    width: 10em;
+  }
+</style>
+
+</head>
+<body>
+<h1>flex関連プロパティ：簡易リファレンス</h1>
+
+<section>
+  <h2>◎flexコンテナプロパティ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>プロパティ</th>
+        <th>意味</th>
+        <th>値</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>flex-direction</th>
+        <td>flexコンテナの主軸方向を決める</td>
+        <td>row | row-reverse | column | column-reverse</td>
+      </tr>
+      <tr>
+        <th>flex-wrap</th>
+        <td>flexアイテムを1行に収めるか複数行にするかを決める</td>
+        <td>nowrap | wrap | wrap-reverse</td>
+      </tr>
+      <tr>
+        <th>flex-flow</th>
+        <td>flex-directionとflex-wrapのショートハンド</td>
+        <td>[flex-direction] [flex-wrap]</td>
+      </tr>
+      <tr>
+        <th>justify-content</th>
+        <td>flexコンテナの主軸に沿ってflexアイテムをどのように配置するか決める</td>
+        <td>flex-start | flex-end | center | space-between | space-around</td>
+      </tr>
+      <tr>
+        <th>align-items</th>
+        <td>flexコンテナのクロス軸に沿ってflexアイテムをどのように配置するか決める</td>
+        <td>stretch | flex-start | flex-end | center | baseline</td>
+      </tr>
+      <tr>
+        <th>align-content</th>
+        <td>flexコンテナのクロス軸に沿って複数行のflexアイテムをどのように配置するか決める</td>
+        <td>stretch | flex-start | flex-end | center | space-between | space-around</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>◎flexアイテムプロパティ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>プロパティ</th>
+        <th>意味</th>
+        <th>値</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>order</th>
+        <td>flexアイテムの表示順をコントロールする</td>
+        <td>整数</td>
+      </tr>
+      <tr>
+        <th>flex-grow</th>
+        <td>flexアイテムの伸長係数（伸びる倍率）を設定</td>
+        <td>数値</td>
+      </tr>
+      <tr>
+        <th>flex-shrink</th>
+        <td>flexアイテムの収縮係数（縮む倍率）を設定</td>
+        <td>数値</td>
+      </tr>
+      <tr>
+        <th>flex-basis</th>
+        <td>flexアイテムの主軸方向のサイズを指定</td>
+        <td>auto | 単位付きの数値</td>
+      </tr>
+      <tr>
+        <th>flex</th>
+        <td>flex-grow・flex-shrink・flex-basisのショートハンド</td>
+        <td>[flex-grow] [flex-shrink] [flex-basis]</td>
+      </tr>
+      <tr>
+        <th>align-self</th>
+        <td>flexアイテムのクロス軸方向の整列をalign-itemsの指定より優先させる</td>
+        <td>auto | stretch | flex-start | flex-end | center | baseline</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</body>
+</html>

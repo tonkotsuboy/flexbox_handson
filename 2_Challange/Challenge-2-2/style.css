@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/*Base and SmartPhone (〜639px)
+---------------------------------*/
+
+/*Text*/
+.box01 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #e8ffc8;
+}
+.box02 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #fff4c8;
+}
+
+/*PC (640px〜)
+---------------------------------*/
+
+/*自分で作成した2-2のstyle.cssの内容を貼り付けて、それを改変する形で作業してください。*/
+@media screen and (min-width: 640px) {
+  .tableBox {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .tableBox-ph {
+    width: 65%;
+  }
+  .tableBox-text {
+    width: 35%;
+  }
+  
+}
