@@ -1,3 +1,5 @@
 workspace.xml
 .idea
 .DS_Store
+/1_Lesson/node_modules
+node_modules
