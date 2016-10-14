@@ -1,0 +1,36 @@
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  border: 1px solid #575757;
+  flex-direction: row;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.box {
+  flex-basis: 200px;
+  align-items: center;
+}
+
+.box {
+  color: #fff;
+  margin: 5px;
+  width: 400px;
+  flex-basis: 200px;
+}
+
+.box1 {
+  background-color: #e87070;
+}
+
+.box2 {
+  background-color: #7970E8;
+  flex-shrink: 2;
+}
+
+.box3 {
+  background-color: #59B898;
+}

@@ -1,0 +1,50 @@
+/* base style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+a {
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* animalクラス */
+
+.animal {
+  box-shadow: 0 0 3px #aaa;
+}
+
+.animal h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.animal p {
+  padding: 10px;
+}
+
+.animal img {
+  width: 100%;
+}
+
+aside {
+  padding: 10px;
+}
