@@ -22,8 +22,8 @@
 .box3 {
   background-color: #59B898;
 }
+
 .container {
   display: flex;
-  justify-content: flex-end;
 }
 
