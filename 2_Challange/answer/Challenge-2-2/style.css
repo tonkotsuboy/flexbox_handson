@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/*Base and SmartPhone (〜639px)
+---------------------------------*/
+
+/*Photo*/
+
+
+/*Text*/
+.box01 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #e8ffc8;
+}
+.box02 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #fff4c8;
+}
+
+/*PC (640px〜)
+---------------------------------*/
+@media screen and (min-width: 640px) {
+  .tableBox {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .tableBox-ph {
+    width: 100%;
+  }
+  .tableBox-text {
+    width: 100%;
+  }
+  
+  /*ここから---------*/
+  .tableBox {
+    display: flex;
+    flex-direction: column-reverse; /*主軸を下→上に変更して写真・テキストブロックの表示を上下入れ替え*/
+  }
+  .tableBox-text {
+    background: #f00;
+    display:flex;
+    flex-direction: row-reverse; /*主軸を右→左に変更して2つのテキストブロックの左右を入れ替え*/
+  }
+  .tableBox .box01,
+  .tableBox .box02 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+}
