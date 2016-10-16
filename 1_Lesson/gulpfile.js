@@ -24,14 +24,6 @@ gulp.task("watch", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded",
-  function () {
-    var ua = navigator.userAgent;
-    if (ua.indexOf("Android 4.") > 0) {
-      flexibility(document.body);
-    }
-  });
-
 // ベンダープレフィックス処理の設定
 gulp.task("prefix", function () {
   return gulp.src(["src/css/style.css"])
