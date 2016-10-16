@@ -1,0 +1,46 @@
+/* base style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+a {
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+li {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+li:last-of-type {
+  border-bottom: 1px solid #ccc;
+}
+
+li .thumb {
+  border-radius: 3px;
+  overflow: hidden;
+  line-height: 0;
+  margin-right: 5px;
+}

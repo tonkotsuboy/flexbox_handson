@@ -1,0 +1,17 @@
+/* Lesson1-2の解答 */
+
+li {
+  display: flex;
+}
+
+.arrow {
+  align-self: center;
+}
+
+.tweet {
+  flex-grow:1;
+}
+
+.thumb {
+  flex-shrink: 0;
+}
