@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/*Base and SmartPhone (〜639px)
+---------------------------------*/
+
+/*Photo*/
+
+
+/*Text*/
+.box01 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #e8ffc8;
+}
+.box02 {
+  padding: 10% 5%;
+  text-align: center;
+  background: #fff4c8;
+}
+
+/*PC (640px〜)
+---------------------------------*/
+@media screen and (min-width: 640px) {
+  .tableBox {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .tableBox-ph {
+    width: 65%;
+  }
+  .tableBox-text {
+    width: 35%;
+  }
+  
+  /*ここから---------*/
+  .tableBox {
+    display: flex; /*flexbox化（主軸：水平方向 左→右）*/
+  }
+  .tableBox-text {
+    display:flex; /*flexbox化*/
+    flex-direction: column; /*（主軸：垂直方向 上→下）*/
+  }
+  .tableBox .box01,
+  .tableBox .box02 {
+    flex-grow: 1; /*主軸方向（この場合は垂直方向）にボックスを伸ばす*/
+    display: flex; /*flexbox化（主軸：水平方向 左→右）*/
+    align-items: center; /*中のテキスト要素を交差軸方向（この場合は縦方向）に中央揃え*/
+  }
+  
+  /*flexboxを3つ入れ子にし、主軸の方向を横→縦→横 と入れ替えてレイアウトを作っています。
+  外側のボックスから順番に挙動を確認しながら設定すると比較的分かりやすいです。*/
+}

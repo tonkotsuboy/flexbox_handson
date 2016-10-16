@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Base and SmartPhone (〜639px)
+---------------------------------*/
+
+/*Photo*/
+.tileGrid-ph::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+.tileGrid-ph {
+  background-position: center center;
+  background-size: cover;
+}
+.tileGrid-ph.ph01 {
+  background-image: url(img/01.jpg);
+}
+.tileGrid-ph.ph02 {
+  background-image: url(img/02.jpg);
+}
+.tileGrid-ph.ph03 {
+  background-image: url(img/03.jpg);
+}
+
+/*Text*/
+.tileGrid-text {
+  padding: 8%;
+  background: #daf3cd;
+}
+.tileGrid-row:nth-child(even) .tileGrid-text {
+  background: #f3efcd;
+}
+
+/*PC (640px〜)
+---------------------------------*/
+@media screen and (min-width: 640px) {
+  .tileGrid-ph::before {
+    padding-top: 75%;
+  }
+  .tileGrid-ph,
+  .tileGrid-text{
+    width: 50%;
+  }
+  
+  /*ここから---------*/
+  .tileGrid-row {
+    display: flex;/*flexboxを設定*/
+  }
+  .tileGrid-row:nth-child(even){ /*偶数行のみ選択*/
+    flex-direction: row-reverse; /*flexアイテムの並びを逆順（右→左）に変更*/
+  }
+  .tileGrid-text {
+    display: flex; /*flexboxを再設定*/
+    align-items: center; /*アイテムを上下中央に配置*/
+  }
+}

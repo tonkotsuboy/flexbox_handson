@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Base and SmartPhone (〜639px)
+---------------------------------*/
+
+/*Photo*/
+.tileGrid-ph::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+.tileGrid-ph {
+  background-position: center center;
+  background-size: cover;
+}
+.tileGrid-ph.ph01 {
+  background-image: url(img/01.jpg);
+}
+.tileGrid-ph.ph02 {
+  background-image: url(img/02.jpg);
+}
+.tileGrid-ph.ph03 {
+  background-image: url(img/03.jpg);
+}
+
+/*Text*/
+.tileGrid-text {
+  padding: 8%;
+  background: #daf3cd;
+}
+.tileGrid > div:nth-child(4n) {
+  background: #f3efcd;
+}
+
+/*PC (640px〜)
+---------------------------------*/
+@media screen and (min-width: 640px) {
+  .tileGrid-ph::before {
+    padding-top: 75%;
+  }
+  .tileGrid-ph,
+  .tileGrid-text{
+    width: 50%;
+  }
+  
+  /*ここから---------*/
+  /*※行毎にdivで囲まず、.tileGrid直下にボックスを6つ並列で並べた場合*/
+  .tileGrid {
+    display: flex; /*flexboxを設定*/
+    flex-wrap: wrap; /*アイテムを折り返し*/
+  }
+  
+  /*この構造だとflex-directionで部分的に入れ替えとかできないので、
+  orderで順番指定する形になるかと思います。*/
+  .tileGrid > div:nth-child(1){
+    order: 1;
+  }
+  .tileGrid > div:nth-child(2){
+    order: 2;
+  }
+  .tileGrid > div:nth-child(3){
+    order: 4;
+  }
+  .tileGrid > div:nth-child(4){
+    order: 3;
+  }
+  .tileGrid > div:nth-child(5){
+    order: 5;
+  }
+  .tileGrid > div:nth-child(6){
+    order: 6;
+  }
+
+ /*最小行数でorder指定するなら↓こんな感じ？でも直感的ではないですね*/
+  /*
+  .tileGrid > div:nth-child(3){
+    order: 1;
+  }
+  .tileGrid > div:nth-child(5){
+    order: 2;
+  }
+  .tileGrid > div:nth-child(6){
+    order: 3;
+  } 
+  */
+  
+  .tileGrid-text {
+    display: flex;
+    align-items: center;
+  }
+}
